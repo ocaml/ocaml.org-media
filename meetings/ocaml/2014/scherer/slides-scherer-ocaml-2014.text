@@ -1,0 +1,104 @@
+% Github Pull Requests?
+% Gabriel Scherer
+% OCaml Workshop, Göteborg, Sep 5 2014
+
+# Motivation
+
+## The problem
+
+Most OCaml development happens through mantis:
+
+- users report bugs, request features, or propose patches
+- sometimes a developper works on a PR
+- a release each year, with some bugs fixed and some new features
+
+Serious bugs get fixed, features are mostly ignored. Patches sometimes ignored (very bad!).
+
+*Problem*: we need more people to review patches -- and reject features.
+
+## The proposal
+
+Users have been complaining about Mantis.
+Would using a fancier tool help get more external reviews?
+
+Proposal: we'll accept Github Pull Request for 6 (8?) months.
+
+(Disclaimer: I dislike github.)
+
+Gabriel will do the work of keeping stuff in sync. (hmm...)
+
+What are the results?
+
+# Results so far
+
+## Unrelated upward trend
+
+The 4.02 release has more stuff, but it's probably independent of Github.
+
+<img src="chart.png" />
+
+## Positive
+
+New contributions: 18 (probably around 30%)
+
+New reviews: 18 (probably around 100%). Yay!
+
+Github attracted a new crowd -- but isn't this pool limited?
+
+## Neutral
+
+Some GPRs (10%) were handled very quickly
+(small fixes, small changes; small is good).
+
+Developpers meeting help taking decisions. We need more of them.
+
+GPR patches are most effective during initla development:
+*before* the feature freeze.
+
+## Negative -- to improve
+
+I flunked the mantis reporting -- but it probably doesn't matter much.
+
+Used mostly by "git maintainers", very little by "SVN maintainers" --
+related to the above?
+
+To be effective, external users should be told more about the
+development cycle.
+
+Is this process Gabriel-bound?
+
+## Some names
+
+*Patches:*
+Nicolas Braud-Santoni,
+Romain Calabiscetta,
+Simon Cruanes,
+Thomas Gazagnaire,
+Grégoire Henri,
+Hugo Heuzard,
+Sergei Lebedev,
+Evgenii Lepikhin,
+Gabriel Radanne,
+Jérôme Vouillon,
+Yotam Barnoy,  
+Frédéric Bour,
+Jacques-Pascal Deplaix,  
+Peter Zotov
+
+**Reviews:**
+Hezekiah Carty,
+Pierre Chambart,
+Jacques-Pascal Deplaix,
+Anil Madhavapeddy,
+Benedikt Meurer,
+Christophe Troestler,
+Jérôme Vouillon,
+Thomas Refis,  
+Ben Noordhuis,
+Jeremy Yallop,  
+Daniel Bünzli,
+François Bobot
+
+Thanks!                           (Discussion)
+
+<!-- pandoc -s --mathml -i -t dzslides slides.text -o slides.html -->
