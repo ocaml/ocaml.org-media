@@ -1,0 +1,22 @@
+Core is Jane Street's alternative to the OCaml standard library. The need for
+an alternative to the standard library is clear: OCaml's standard library is
+well implemented, but it's narrow in scope, and somewhat idiosyncratic in its
+interfaces.
+
+Core's origin's date back 10 years, to the first uses of OCaml at Jane Street.
+Today, Core is at the base of the multi-million-line OCaml codebase at Jane
+Street, which is actively used by on the order of a hundred people at Jane
+Street for their daily work.
+
+The talk will provide a brief overview of the design principles behind core,
+including our approaches to:
+
+   - building consistent and interoperable interfaces
+   - error handling
+   - naming
+   - organization of types, values and and modules
+
+We'll also discuss the the internal and community process surrounding Core,
+including how contributions from external providers are handled, and how our
+own internal Q/A process works.
+
