@@ -1,0 +1,28 @@
+Modern car body welding stations make use of industrial robots to achieve a
+very high degree of automation. A typical station consists of up to 12 robots,
+a PLC and other working machines like welding guns and grippers. An error in
+the software controlling such a station can have extremely expensive
+consequences if it leads to a stop of production. Causes of such a situation
+range from uninitialized variables to incorrectly placed locks that can lead to
+deadlocks or collisions of the robots.
+
+To increase the quality of the robot programs and reduce the testing effort
+necessary, we are using formal methods to verify certain properties: We present
+a tool-chain written in OCaml that can generate models for industrial robot
+stations. It contains optimizing compilers for the robot programs, code
+generators for aspects like the PLC behavior and collision checks and tools to
+operate on the generated models. The final models can be analyzed with a model
+checker for collisions, deadlocks and other properties. In case of an error we
+generate a replay-debugger on the basis of the error found in form of a
+stand-alone web-application. We applied the tool-chain to several car body
+welding stations from Audi and found several non-terminating robot programs.
+
+The presentation will first give an overview of the industrial application;
+then I will go into some concrete implementation details:
+
+* The algorithms we added to the ocamlgraph library (Fixpoint, LeaderList and 
+  Contraction) 
+* The library for the intermediate language
+* The library for simplifying boolean expressions, all of which have been 
+  released as open source. The emphasis will be on the ocamlgraph Fixpoint 
+  module we use to write data-flow analysis with.

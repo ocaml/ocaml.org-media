@@ -1,0 +1,10 @@
+OCamlPro exists with the mission of promoting the successful use of OCaml in
+industry. OCamlPro builds a professional environment for the development of
+OCaml applications, including IDE integration, development tools and services.
+These include training, consulting and tailored software development for
+specific needs.  Part of OCamlPro's work has been to improve OCaml
+accessibility to help popularize its use worldwide, and we provide tools to
+this end. In this talk, I will present this work and some proposals for the
+future of OCaml.
+
+Fabrice le Fessant, OCamlPro
